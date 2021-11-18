@@ -1,0 +1,39 @@
+/*
+    These are CSS comments!
+*/
+
+h1{
+    font-size: 50px;
+}
+
+.blue{
+    color:blue;
+}
+
+#purple{
+    color:purple;
+}
+
+.red{
+    color:red;
+}
+
+.align_left{
+    text-align: left;
+}
+
+.align_center{
+    text-align: center;
+}
+
+.align_right{
+    text-align: right;
+}
+
+.white{
+    color: white;
+}
+
+.black_background{
+    background-color: black;
+}
