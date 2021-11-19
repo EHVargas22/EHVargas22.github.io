@@ -1,18 +1,104 @@
 <!-- These are comments in HTML -->
 
-<html>
-
+<html lang="en-us">
 
     <head>
         <title>My Home Page</title>
+        <style>
+            h1{font-size: 40px;}
+            body{background-image: url("media/background.jpg"); background-size: 100% 100%;}
+            image{margin: 10px; border: brown; border-width: 5px;}
+            .navbar{padding: 10px; background-color: aquamarine;}
+            .navbar li{
+                display: inline-block; padding: 25px; background: pink; 
+                border-radius: 3px; margin-left: 10px; margin-right: 10px;
+            }
+            .navbar li a{color: purple; text-decoration: none;}
+            .select{visibility: hidden;}
+            @media (max-width: 600px){
+                nav{visibility: hidden;}
+                .navbar li{padding: 10px;}
+                .navbar ul{visibility: hidden;}
+                .select{visibility: visible;}
+            }
+        </style>
     </head>
 
 
     <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="headings.html">Headings Demo</a></li>
+                <li><a href="text.html">Text Demo</a></li>
+                <li><a href="unordered_list.html">Unordered List Demo</a></li>
+                <li><a href="ordered_list.html">Ordered List Demo</a></li>
+                <li><a href="css.html">CSS Demo</a></li>
+                <li><a href="tables.html">Table 1 Demo</a></li>
+                <li><a href="table2.html">Table 2 Demo</a></li>
+                <li><a href="travel.html">Travel Page</a></li>
+            </ul>
+        </nav>
+        
+ 
+        <select class="select">
+            <option>Home</option>
+            <option>Heading Demo</option>
+            <option>Text Demo</option>
+            <option>Unordered Lists</option>
+            <option>Ordered Lists</option>
+            <option>CSS Demo</option>
+            <option>Table 1 Demo</option>
+            <option>Table 2 Demo</option>
+            <option>Travel Page</option>
+        </select>
+
+
+        <center>
         <h1>Welcome to my web page!</h1>
-        <p>
-            Check out some more content here:
-        </p>
+        <h2>Elsa Hernandez</h2>
+        <img src="media/elsa_pic.jpg" alt="Elsa" width="200" height = "200" title="Elsa">
+        <br><br>
+
+        <p>Hello! I am Elsa Hernandez, and I am currently enrolled in the Data Science Boot Camp at GA Tech.</p>
+        <p>I was born in Mexico and have lived most of my life in Altanta, GA.</p>
+        </center>
+
+        <hr>
+        <h3>Links:</h3>
+        <ul>
+            <li>GitHub: <a href = "https://EHVargas22.github.io">Click Here</a></li>
+        </ul>
+        <hr>
+        <center>
+            <h3>Elsa's Favorites</h3>
+            <table border="1">
+                <tr>
+                    <th>Movies</th>
+                    <th>Activities</th>
+                    <th>Sports</th>
+                </tr>
+                <tr>
+                    <td>Running With Scissors</td>
+                    <td>Playing Dungeons & Dragons</td>
+                    <td>Krav Maga</td>
+                </tr>
+                <tr>
+                    <td>The Royal Tannenbaums</td>
+                    <td>Playing Video Games</td>
+                    <td>Soccer</td>
+                </tr>
+                <tr>
+                    <td>Paris, I love You</td>
+                    <td>Reading Nautilus Magazine</td>
+                    <td>Boxing</td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+
+        <p>Check out some more content here:</p>
 
         <h3>Heading Demo</h3>
         <a href="headings.html">Click here for the Heading Demo page.</a>
